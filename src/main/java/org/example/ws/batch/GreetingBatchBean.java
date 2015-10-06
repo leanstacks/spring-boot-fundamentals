@@ -7,7 +7,6 @@ import org.example.ws.service.GreetingService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -18,8 +17,8 @@ public class GreetingBatchBean {
     @Autowired
     private GreetingService greetingService;
 
-    @Scheduled(
-            cron = "0,30 * * * * *")
+    // @Scheduled(
+    // cron = "0,30 * * * * *")
     public void cronJob() {
         logger.info("> cronJob");
 
@@ -31,9 +30,9 @@ public class GreetingBatchBean {
         logger.info("< cronJob");
     }
 
-    @Scheduled(
-            initialDelay = 5000,
-            fixedRate = 15000)
+    // @Scheduled(
+    // initialDelay = 5000,
+    // fixedRate = 15000)
     public void fixedRateJobWithInitialDelay() {
         logger.info("> fixedRateJobWithInitialDelay");
 
@@ -51,9 +50,9 @@ public class GreetingBatchBean {
         logger.info("< fixedRateJobWithInitialDelay");
     }
 
-    @Scheduled(
-            initialDelay = 5000,
-            fixedDelay = 15000)
+    // @Scheduled(
+    // initialDelay = 5000,
+    // fixedDelay = 15000)
     public void fixedDelayJobWithInitialDelay() {
         logger.info("> fixedDelayJobWithInitialDelay");
 

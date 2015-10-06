@@ -50,6 +50,10 @@ The branch named `cache` contains the source code illustrated in the episode [De
 
 The branch named `scheduled` contains the source code illustrated in the episode [Creating Scheduled Processes with Spring Boot](https://youtu.be/TEMsEcdAsbY?list=PLGDwUiT1wr6-Fn3N2oqJpTdhGjFHnIIKY).
 
+#### async
+
+The branch named `async` contains the source code illustrated in the episode [Creating Asynchronous Processes with Spring Boot](https://youtu.be/106WWFvgNW0?list=PLGDwUiT1wr6-Fn3N2oqJpTdhGjFHnIIKY).
+
 
 ## Languages
 
