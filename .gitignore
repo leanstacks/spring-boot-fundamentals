@@ -1,6 +1,7 @@
 # Eclipse Directories and Files
 .project
 .classpath
+.springBeans
 /.settings
 
 # Generated Directories and Files
