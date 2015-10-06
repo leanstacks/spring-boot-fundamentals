@@ -34,6 +34,10 @@ The branch named `restws-2` contains the source code illustrated in this episode
 
 The branch named `service` contains the source code illustrated in this episode.
 
+#### Episode: Using Spring Data Repositories with Spring Boot
+
+The branch named `repository` contains the source code illustrated in this episode.
+
 
 ## Languages
 

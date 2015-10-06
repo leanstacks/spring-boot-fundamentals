@@ -1,62 +1,22 @@
 package org.example.ws.service;
 
 import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
 
 import org.example.ws.model.Greeting;
+import org.example.ws.repository.GreetingRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class GreetingServiceBean implements GreetingService {
 
-    private static Long nextId;
-    private static Map<Long, Greeting> greetingMap;
-
-    private static Greeting save(Greeting greeting) {
-        if (greetingMap == null) {
-            greetingMap = new HashMap<Long, Greeting>();
-            nextId = new Long(1);
-        }
-        // If Update...
-        if (greeting.getId() != null) {
-            Greeting oldGreeting = greetingMap.get(greeting.getId());
-            if (oldGreeting == null) {
-                return null;
-            }
-            greetingMap.remove(greeting.getId());
-            greetingMap.put(greeting.getId(), greeting);
-            return greeting;
-        }
-        // If Create...
-        greeting.setId(nextId);
-        nextId += 1;
-        greetingMap.put(greeting.getId(), greeting);
-        return greeting;
-    }
-
-    private static boolean remove(Long id) {
-        Greeting deletedGreeting = greetingMap.remove(id);
-        if (deletedGreeting == null) {
-            return false;
-        }
-        return true;
-    }
-
-    static {
-        Greeting g1 = new Greeting();
-        g1.setText("Hello World!");
-        save(g1);
-
-        Greeting g2 = new Greeting();
-        g2.setText("Hola Mundo!");
-        save(g2);
-    }
+    @Autowired
+    private GreetingRepository greetingRepository;
 
     @Override
     public Collection<Greeting> findAll() {
 
-        Collection<Greeting> greetings = greetingMap.values();
+        Collection<Greeting> greetings = greetingRepository.findAll();
 
         return greetings;
     }
@@ -64,7 +24,7 @@ public class GreetingServiceBean implements GreetingService {
     @Override
     public Greeting findOne(Long id) {
 
-        Greeting greeting = greetingMap.get(id);
+        Greeting greeting = greetingRepository.findOne(id);
 
         return greeting;
     }
@@ -72,7 +32,15 @@ public class GreetingServiceBean implements GreetingService {
     @Override
     public Greeting create(Greeting greeting) {
 
-        Greeting savedGreeting = save(greeting);
+        // Ensure the entity object to be created does NOT exist in the
+        // repository. Prevent the default behavior of save() which will update
+        // an existing entity if the entity matching the supplied id exists.
+        if (greeting.getId() != null) {
+            // Cannot create Greeting with specified ID value
+            return null;
+        }
+
+        Greeting savedGreeting = greetingRepository.save(greeting);
 
         return savedGreeting;
     }
@@ -80,7 +48,17 @@ public class GreetingServiceBean implements GreetingService {
     @Override
     public Greeting update(Greeting greeting) {
 
-        Greeting updatedGreeting = save(greeting);
+        // Ensure the entity object to be updated exists in the repository to
+        // prevent the default behavior of save() which will persist a new
+        // entity if the entity matching the id does not exist
+        Greeting greetingToUpdate = findOne(greeting.getId());
+        if (greetingToUpdate == null) {
+            // Cannot update Greeting that hasn't been persisted
+            return null;
+        }
+
+        greetingToUpdate.setText(greeting.getText());
+        Greeting updatedGreeting = greetingRepository.save(greetingToUpdate);
 
         return updatedGreeting;
     }
@@ -88,7 +66,7 @@ public class GreetingServiceBean implements GreetingService {
     @Override
     public void delete(Long id) {
 
-        remove(id);
+        greetingRepository.delete(id);
 
     }
 
