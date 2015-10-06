@@ -26,6 +26,10 @@ The branch named `bootstrap` contains the source code illustrated in this episod
 
 The branch named `restws-1` contains the source code illustrated in this episode.
 
+#### Episode: Creating RESTful Web Services with Spring Boot - Part Two
+
+The branch named `restws-2` contains the source code illustrated in this episode.
+
 
 ## Languages
 
