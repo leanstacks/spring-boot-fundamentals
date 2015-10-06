@@ -22,6 +22,10 @@ Each episode of the Spring Boot Fundamentals video series has a corresponding br
 
 The branch named `bootstrap` contains the source code illustrated in this episode.
 
+#### Episode: Creating RESTful Web Services with Spring Boot - Part One
+
+The branch named `restws-1` contains the source code illustrated in this episode.
+
 
 ## Languages
 
