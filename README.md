@@ -18,33 +18,37 @@ Each episode of the Spring Boot Fundamentals video series has a corresponding br
 
 ### Branches
 
-#### Episode: Bootstrapping a Spring Boot Application Project
+#### bootstrap
 
-The branch named `bootstrap` contains the source code illustrated in this episode.
+The branch named `bootstrap` contains the source code illustrated in the episode [Bootstrapping a Spring Boot Application Project](https://youtu.be/XbknBOmMuPQ?list=PLGDwUiT1wr6-Fn3N2oqJpTdhGjFHnIIKY).
 
-#### Episode: Creating RESTful Web Services with Spring Boot - Part One
+#### restws-1
 
-The branch named `restws-1` contains the source code illustrated in this episode.
+The branch named `restws-1` contains the source code illustrated in the episode [Creating RESTful Web Services with Spring Boot - Part 1](https://youtu.be/kbisNUfqVLM?list=PLGDwUiT1wr6-Fn3N2oqJpTdhGjFHnIIKY).
 
-#### Episode: Creating RESTful Web Services with Spring Boot - Part Two
+#### restws-2
 
-The branch named `restws-2` contains the source code illustrated in this episode.
+The branch named `restws-2` contains the source code illustrated in the episode [Creating RESTful Web Services with Spring Boot - Part 2](https://youtu.be/mrrHTJxppi8?list=PLGDwUiT1wr6-Fn3N2oqJpTdhGjFHnIIKY).
 
-#### Episode: Creating Service Components with Spring Boot
+#### service
 
-The branch named `service` contains the source code illustrated in this episode.
+The branch named `service` contains the source code illustrated in the episode [Creating Service Components with Spring Boot](https://youtu.be/qJnAM_ZZvWA?list=PLGDwUiT1wr6-Fn3N2oqJpTdhGjFHnIIKY).
 
-#### Episode: Using Spring Data Repositories with Spring Boot
+#### repository
 
-The branch named `repository` contains the source code illustrated in this episode.
+The branch named `repository` contains the source code illustrated in the episode [Using Spring Data Repositories with Spring Boot](https://youtu.be/4bPT-0f-am4?list=PLGDwUiT1wr6-Fn3N2oqJpTdhGjFHnIIKY).
 
-#### Episode: Declarative Transaction Management with Spring Boot
+#### transactional
 
-The branch named `transactional` contains the source code illustrated in this episode.
+The branch named `transactional` contains the source code illustrated in the episode [Declarative Transaction Management with Spring Boot](https://youtu.be/4bPT-0f-am4?list=PLGDwUiT1wr6-Fn3N2oqJpTdhGjFHnIIKY).
 
-#### Episode: Declarative Cache Management with Spring Boot
+#### cache
 
-The branch named `cache` contains the source code illustrated in this episode.
+The branch named `cache` contains the source code illustrated in the episode [Declarative Cache Management with Spring Boot](https://youtu.be/g4h268Hx0AU?list=PLGDwUiT1wr6-Fn3N2oqJpTdhGjFHnIIKY).
+
+#### scheduled
+
+The branch named `scheduled` contains the source code illustrated in the episode [Creating Scheduled Processes with Spring Boot](https://youtu.be/TEMsEcdAsbY?list=PLGDwUiT1wr6-Fn3N2oqJpTdhGjFHnIIKY).
 
 
 ## Languages
