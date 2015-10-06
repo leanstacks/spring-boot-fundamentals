@@ -38,6 +38,10 @@ The branch named `service` contains the source code illustrated in this episode.
 
 The branch named `repository` contains the source code illustrated in this episode.
 
+#### Episode: Declarative Transaction Management with Spring Boot
+
+The branch named `transactional` contains the source code illustrated in this episode.
+
 
 ## Languages
 

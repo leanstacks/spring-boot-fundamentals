@@ -6,8 +6,13 @@ import org.example.ws.model.Greeting;
 import org.example.ws.repository.GreetingRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
+@Transactional(
+        propagation = Propagation.SUPPORTS,
+        readOnly = true)
 public class GreetingServiceBean implements GreetingService {
 
     @Autowired
@@ -30,6 +35,9 @@ public class GreetingServiceBean implements GreetingService {
     }
 
     @Override
+    @Transactional(
+            propagation = Propagation.REQUIRED,
+            readOnly = false)
     public Greeting create(Greeting greeting) {
 
         // Ensure the entity object to be created does NOT exist in the
@@ -42,10 +50,18 @@ public class GreetingServiceBean implements GreetingService {
 
         Greeting savedGreeting = greetingRepository.save(greeting);
 
+        // Illustrate Tx Rollback
+        if (savedGreeting.getId() == 4L) {
+            throw new RuntimeException("Roll me back!");
+        }
+
         return savedGreeting;
     }
 
     @Override
+    @Transactional(
+            propagation = Propagation.REQUIRED,
+            readOnly = false)
     public Greeting update(Greeting greeting) {
 
         // Ensure the entity object to be updated exists in the repository to
@@ -64,6 +80,9 @@ public class GreetingServiceBean implements GreetingService {
     }
 
     @Override
+    @Transactional(
+            propagation = Propagation.REQUIRED,
+            readOnly = false)
     public void delete(Long id) {
 
         greetingRepository.delete(id);
