@@ -30,6 +30,10 @@ The branch named `restws-1` contains the source code illustrated in this episode
 
 The branch named `restws-2` contains the source code illustrated in this episode.
 
+#### Episode: Creating Service Components with Spring Boot
+
+The branch named `service` contains the source code illustrated in this episode.
+
 
 ## Languages
 
