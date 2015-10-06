@@ -42,6 +42,10 @@ The branch named `repository` contains the source code illustrated in this episo
 
 The branch named `transactional` contains the source code illustrated in this episode.
 
+#### Episode: Declarative Cache Management with Spring Boot
+
+The branch named `cache` contains the source code illustrated in this episode.
+
 
 ## Languages
 

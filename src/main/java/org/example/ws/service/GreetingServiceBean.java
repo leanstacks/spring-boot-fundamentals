@@ -5,6 +5,9 @@ import java.util.Collection;
 import org.example.ws.model.Greeting;
 import org.example.ws.repository.GreetingRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.CachePut;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
@@ -27,6 +30,9 @@ public class GreetingServiceBean implements GreetingService {
     }
 
     @Override
+    @Cacheable(
+            value = "greetings",
+            key = "#id")
     public Greeting findOne(Long id) {
 
         Greeting greeting = greetingRepository.findOne(id);
@@ -38,6 +44,9 @@ public class GreetingServiceBean implements GreetingService {
     @Transactional(
             propagation = Propagation.REQUIRED,
             readOnly = false)
+    @CachePut(
+            value = "greetings",
+            key = "#result.id")
     public Greeting create(Greeting greeting) {
 
         // Ensure the entity object to be created does NOT exist in the
@@ -50,11 +59,6 @@ public class GreetingServiceBean implements GreetingService {
 
         Greeting savedGreeting = greetingRepository.save(greeting);
 
-        // Illustrate Tx Rollback
-        if (savedGreeting.getId() == 4L) {
-            throw new RuntimeException("Roll me back!");
-        }
-
         return savedGreeting;
     }
 
@@ -62,6 +66,9 @@ public class GreetingServiceBean implements GreetingService {
     @Transactional(
             propagation = Propagation.REQUIRED,
             readOnly = false)
+    @CachePut(
+            value = "greetings",
+            key = "#greeting.id")
     public Greeting update(Greeting greeting) {
 
         // Ensure the entity object to be updated exists in the repository to
@@ -83,10 +90,20 @@ public class GreetingServiceBean implements GreetingService {
     @Transactional(
             propagation = Propagation.REQUIRED,
             readOnly = false)
+    @CacheEvict(
+            value = "greetings",
+            key = "#id")
     public void delete(Long id) {
 
         greetingRepository.delete(id);
 
     }
 
+    @Override
+    @CacheEvict(
+            value = "greetings",
+            allEntries = true)
+    public void evictCache() {
+
+    }
 }
