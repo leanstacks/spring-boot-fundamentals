@@ -62,6 +62,10 @@ The branch named `configuration` contains the source code illustrated in the epi
 
 The branch named `unit-test` contains the source code illustrated in the episode [Creating Unit Tests with Spring Boot](https://youtu.be/WKD9E8KsQME?list=PLGDwUiT1wr6-Fn3N2oqJpTdhGjFHnIIKY).
 
+#### unit-test-controller
+
+The branch named `unit-test-controller` contains the source code illustrated in the episode [Creating Web Service Controller Unit Tests with Spring Boot](https://youtu.be/zjVobP0sonA?list=PLGDwUiT1wr6-Fn3N2oqJpTdhGjFHnIIKY).
+
 
 ## Languages
 

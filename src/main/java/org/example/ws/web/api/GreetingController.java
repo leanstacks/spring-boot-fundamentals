@@ -177,16 +177,14 @@ public class GreetingController {
      * 
      * @param id A Long URL path variable containing the Greeting primary key
      *        identifier.
-     * @param greeting The Greeting object to be deleted. (optional)
      * @return A ResponseEntity with an empty response body and a HTTP status
      *         code as described in the method comment.
      */
     @RequestMapping(
             value = "/api/greetings/{id}",
-            method = RequestMethod.DELETE,
-            consumes = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Greeting> deleteGreeting(@PathVariable("id") Long id,
-            @RequestBody Greeting greeting) {
+            method = RequestMethod.DELETE)
+    public ResponseEntity<Greeting> deleteGreeting(
+            @PathVariable("id") Long id) {
         logger.info("> deleteGreeting id:{}", id);
 
         greetingService.delete(id);
