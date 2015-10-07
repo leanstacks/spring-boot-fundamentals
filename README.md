@@ -54,6 +54,10 @@ The branch named `scheduled` contains the source code illustrated in the episode
 
 The branch named `async` contains the source code illustrated in the episode [Creating Asynchronous Processes with Spring Boot](https://youtu.be/106WWFvgNW0?list=PLGDwUiT1wr6-Fn3N2oqJpTdhGjFHnIIKY).
 
+#### configuration
+
+The branch named `configuration` contains the source code illustrated in the episode [Using Profiles and Properties to Create Environment-Specific Runtime Configurations with Spring Boot](https://youtu.be/0zjQX7WwjrI?list=PLGDwUiT1wr6-Fn3N2oqJpTdhGjFHnIIKY).
+
 
 ## Languages
 
