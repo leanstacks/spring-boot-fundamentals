@@ -58,6 +58,10 @@ The branch named `async` contains the source code illustrated in the episode [Cr
 
 The branch named `configuration` contains the source code illustrated in the episode [Using Profiles and Properties to Create Environment-Specific Runtime Configurations with Spring Boot](https://youtu.be/0zjQX7WwjrI?list=PLGDwUiT1wr6-Fn3N2oqJpTdhGjFHnIIKY).
 
+#### unit-test
+
+The branch named `unit-test` contains the source code illustrated in the episode [Creating Unit Tests with Spring Boot](https://youtu.be/WKD9E8KsQME?list=PLGDwUiT1wr6-Fn3N2oqJpTdhGjFHnIIKY).
+
 
 ## Languages
 
