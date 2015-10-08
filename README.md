@@ -66,6 +66,10 @@ The branch named `unit-test` contains the source code illustrated in the episode
 
 The branch named `unit-test-controller` contains the source code illustrated in the episode [Creating Web Service Controller Unit Tests with Spring Boot](https://youtu.be/zjVobP0sonA?list=PLGDwUiT1wr6-Fn3N2oqJpTdhGjFHnIIKY).
 
+#### unit-test-mockito
+
+The branch named `unit-test-mockito` contains the source code illustrated in the episode [Creating Web Service Controller Unit Tests with Mockito and Spring Boot](https://youtu.be/7TMuBxTy3GE?list=PLGDwUiT1wr6-Fn3N2oqJpTdhGjFHnIIKY).
+
 
 ## Languages
 
