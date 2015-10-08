@@ -2,6 +2,7 @@ package org.example.ws;
 
 import java.io.IOException;
 
+import org.example.ws.web.api.BaseController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.test.web.servlet.MockMvc;
@@ -36,6 +37,16 @@ public abstract class AbstractControllerTest extends AbstractTest {
      */
     protected void setUp() {
         mvc = MockMvcBuilders.webAppContextSetup(webApplicationContext).build();
+    }
+
+    /**
+     * Prepares the test class for execution of web tests. Builds a MockMvc
+     * instance using standalone configuration facilitating the injection of
+     * Mockito resources into the controller class.
+     * @param controller A controller object to be tested.
+     */
+    protected void setUp(BaseController controller) {
+        mvc = MockMvcBuilders.standaloneSetup(controller).build();
     }
 
     /**

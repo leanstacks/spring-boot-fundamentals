@@ -29,7 +29,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author Matt Warman
  */
 @RestController
-public class GreetingController {
+public class GreetingController extends BaseController {
 
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
