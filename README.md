@@ -70,6 +70,10 @@ The branch named `unit-test-controller` contains the source code illustrated in 
 
 The branch named `unit-test-mockito` contains the source code illustrated in the episode [Creating Web Service Controller Unit Tests with Mockito and Spring Boot](https://youtu.be/7TMuBxTy3GE?list=PLGDwUiT1wr6-Fn3N2oqJpTdhGjFHnIIKY).
 
+#### actuator
+
+The branch named `actuator` contains the source code illustrated in the episode [Production Monitoring and Management with Spring Boot Actuator](https://youtu.be/7L5rBQUMiPI?list=PLGDwUiT1wr6-Fn3N2oqJpTdhGjFHnIIKY).
+
 
 ## Languages
 

@@ -47,6 +47,12 @@
    <version>18.0</version>
   </dependency>
   
+  <!-- Dependencies for Actuator Production Monitoring and Management -->
+  <dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-actuator</artifactId>
+  </dependency>
+  
   <!-- Dependencies for Unit Testing -->
   <dependency>
    <groupId>org.springframework.boot</groupId>
