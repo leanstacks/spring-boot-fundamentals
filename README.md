@@ -74,6 +74,10 @@ The branch named `unit-test-mockito` contains the source code illustrated in the
 
 The branch named `actuator` contains the source code illustrated in the episode [Production Monitoring and Management with Spring Boot Actuator](https://youtu.be/7L5rBQUMiPI?list=PLGDwUiT1wr6-Fn3N2oqJpTdhGjFHnIIKY).
 
+#### security
+
+The branch named `security` contains the source code illustrated in the episode [Protecting Application Assets with Spring Security - Out-of-the-Box Features](https://youtu.be/CQfp2ngwT5U?list=PLGDwUiT1wr6-Fn3N2oqJpTdhGjFHnIIKY).
+
 
 ## Languages
 
