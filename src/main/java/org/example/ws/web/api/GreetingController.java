@@ -6,8 +6,6 @@ import java.util.concurrent.Future;
 import org.example.ws.model.Greeting;
 import org.example.ws.service.EmailService;
 import org.example.ws.service.GreetingService;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -30,8 +28,6 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class GreetingController extends BaseController {
-
-    private Logger logger = LoggerFactory.getLogger(this.getClass());
 
     /**
      * The GreetingService business service.
