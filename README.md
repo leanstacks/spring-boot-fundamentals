@@ -78,6 +78,10 @@ The branch named `actuator` contains the source code illustrated in the episode 
 
 The branch named `security` contains the source code illustrated in the episode [Protecting Application Assets with Spring Security - Out-of-the-Box Features](https://youtu.be/CQfp2ngwT5U?list=PLGDwUiT1wr6-Fn3N2oqJpTdhGjFHnIIKY).
 
+#### controller-hierarchy
+
+The branch named `controller-hierarchy` contains the source code illustrated in the episode [Creating Meaningful RESTful Web Service Controller Hierarchies with Spring Boot](https://youtu.be/Dg8hb0HPMWA?list=PLGDwUiT1wr6-Fn3N2oqJpTdhGjFHnIIKY).
+
 
 ## Languages
 
