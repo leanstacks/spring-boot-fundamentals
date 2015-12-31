@@ -82,6 +82,10 @@ The branch named `security` contains the source code illustrated in the episode 
 
 The branch named `controller-hierarchy` contains the source code illustrated in the episode [Creating Meaningful RESTful Web Service Controller Hierarchies with Spring Boot](https://youtu.be/Dg8hb0HPMWA?list=PLGDwUiT1wr6-Fn3N2oqJpTdhGjFHnIIKY).
 
+#### gradle
+
+The branch named `gradle` contains the source code illustrated in the episode [Using the Gradle Build System](https://youtu.be/wRHj2hUHQd0?list=PLGDwUiT1wr6-Fn3N2oqJpTdhGjFHnIIKY).
+
 
 ## Languages
 
