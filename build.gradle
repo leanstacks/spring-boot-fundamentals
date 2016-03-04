@@ -4,7 +4,7 @@ buildscript {
   }
   
   dependencies {
-    classpath group: 'org.springframework.boot', name: 'spring-boot-gradle-plugin', version: '1.3.2.RELEASE'
+    classpath group: 'org.springframework.boot', name: 'spring-boot-gradle-plugin', version: '1.3.3.RELEASE'
   }
 }
 
