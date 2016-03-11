@@ -86,6 +86,10 @@ The branch named `controller-hierarchy` contains the source code illustrated in 
 
 The branch named `gradle` contains the source code illustrated in the episode [Using the Gradle Build System](https://youtu.be/wRHj2hUHQd0?list=PLGDwUiT1wr6-Fn3N2oqJpTdhGjFHnIIKY).
 
+#### gradle-build-dash
+
+The branch named `gradle-build-dash` contains the source code illustrated in the episode [Introduction to Gradle Project and Build Reports](https://youtu.be/I_jnSDjN2eo?list=PLGDwUiT1wr6-Fn3N2oqJpTdhGjFHnIIKY).
+
 
 ## Languages
 
