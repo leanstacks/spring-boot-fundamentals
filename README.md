@@ -90,6 +90,10 @@ The branch named `gradle` contains the source code illustrated in the episode [U
 
 The branch named `gradle-build-dash` contains the source code illustrated in the episode [Introduction to Gradle Project and Build Reports](https://youtu.be/I_jnSDjN2eo?list=PLGDwUiT1wr6-Fn3N2oqJpTdhGjFHnIIKY).
 
+#### gradle-jacoco
+
+The branch named `gradle-jacoco` contains the source code illustrated in the episode [Using the Gradle JaCoCo Plugin for Unit Test Code Coverage Reporting](https://youtu.be/ieYs0hkogVY?list=PLGDwUiT1wr6-Fn3N2oqJpTdhGjFHnIIKY).
+
 
 ## Languages
 
