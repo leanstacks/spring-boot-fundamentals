@@ -14,12 +14,14 @@ apply plugin: 'spring-boot'
 apply plugin: 'project-report'
 apply plugin: 'build-dashboard'
 apply plugin: 'jacoco'
+apply plugin: 'checkstyle'
 
 version = '1.0.0-SNAPSHOT'
 sourceCompatibility = 1.8
 
 ext {
   jacocoVersion = '0.7.5.201505241946'
+  checkstyleVersion = '6.16.1'
   guavaVersion = '19.0'
   jadiraVersion = '4.0.0.GA'
   swaggerVersion = '2.3.0'
@@ -62,3 +64,8 @@ jacocoTestReport {
   }
 }
 test.finalizedBy jacocoTestReport
+
+checkstyle {
+  toolVersion = checkstyleVersion
+  config = rootProject.resources.text.fromFile('etc/checkstyle/rules.xml')
+}
