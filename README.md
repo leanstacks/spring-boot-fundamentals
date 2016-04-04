@@ -98,6 +98,10 @@ The branch named `gradle-jacoco` contains the source code illustrated in the epi
 
 The branch named `gradle-checkstyle` contains the source code illustrated in the episode [Using the Gradle Checkstyle Plugin for Code Style Reporting](https://youtu.be/zo3zyyo7Vkw?list=PLGDwUiT1wr6-Fn3N2oqJpTdhGjFHnIIKY).
 
+#### gradle-pmd
+
+The branch named `gradle-pmd` contains the source code illustrated in the episode [Using the Gradle PMD Plugin for Static Code Analysis](https://youtu.be/Eek-5VJV2Xk?list=PLGDwUiT1wr6-Fn3N2oqJpTdhGjFHnIIKY).
+
 
 ## Languages
 

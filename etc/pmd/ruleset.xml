@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<ruleset name="LeanStacks PMD Ruleset" xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
+
+	<description>
+        This is the LeanStacks Official PMD ruleset.
+    </description>
+
+	<!-- Use the entire 'basic' ruleset -->
+	<rule ref="rulesets/java/basic.xml" />
+
+	<!-- Use the entire 'clone' ruleset -->
+	<rule ref="rulesets/java/clone.xml" />
+
+	<!-- Use the entire 'code size' ruleset -->
+	<rule ref="rulesets/java/codesize.xml" />
+
+	<!-- Use the entire 'controversial' ruleset -->
+	<rule ref="rulesets/java/controversial.xml">
+		<exclude name="OnlyOneReturn" />
+	</rule>
+
+	<!-- Use the entire 'coupling' ruleset -->
+	<rule ref="rulesets/java/coupling.xml">
+		<exclude name="LawOfDemeter" />
+	</rule>
+
+	<!-- Use the entire 'design' ruleset -->
+	<rule ref="rulesets/java/design.xml" />
+
+	<!-- Use the entire 'empty' ruleset -->
+	<rule ref="rulesets/java/empty.xml" />
+
+	<!-- Use the entire 'finalizers' ruleset -->
+	<rule ref="rulesets/java/finalizers.xml" />
+
+	<!-- Use the entire 'javabeans' ruleset -->
+	<rule ref="rulesets/java/javabeans.xml" />
+
+	<!-- Use the entire 'java logging' ruleset -->
+	<rule ref="rulesets/java/logging-java.xml" />
+
+	<!-- Use the entire 'junit' ruleset -->
+	<rule ref="rulesets/java/junit.xml" />
+
+	<!-- Use the entire 'optimizations' ruleset -->
+	<rule ref="rulesets/java/optimizations.xml" />
+
+	<!-- Use the entire 'sun security' ruleset -->
+	<rule ref="rulesets/java/sunsecure.xml" />
+
+	<!-- Use the entire 'strict exceptions' ruleset -->
+	<rule ref="rulesets/java/strictexception.xml" />
+
+	<!-- Use the entire 'type resolution' ruleset -->
+	<rule ref="rulesets/java/typeresolution.xml" />
+
+	<!-- Use the entire 'unnecessary' ruleset -->
+	<rule ref="rulesets/java/unnecessary.xml" />
+
+	<!-- Use the entire 'unused code' ruleset -->
+	<rule ref="rulesets/java/unusedcode.xml" />
+
+	<!-- Use the entire 'strings' ruleset -->
+	<rule ref="rulesets/java/strings.xml" />
+
+</ruleset>
