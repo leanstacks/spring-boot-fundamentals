@@ -54,6 +54,8 @@ dependencies {
   testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test'
 }
 
+defaultTasks 'clean', 'build'
+
 jacoco {
   toolVersion = jacocoVersion
 }
@@ -77,3 +79,7 @@ pmd {
   ruleSetConfig = rootProject.resources.text.fromFile('etc/pmd/ruleset.xml')
   ignoreFailures = true
 }
+
+check.finalizedBy projectReport
+
+projectReport.finalizedBy buildDashboard
