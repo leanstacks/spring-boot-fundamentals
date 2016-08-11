@@ -106,6 +106,10 @@ The branch named `gradle-pmd` contains the source code illustrated in the episod
 
 The branch named `gradle-defaulttasks` contains the source code illustrated in the episode [Configuring Gradle Default Tasks](https://youtu.be/6NrFSDzwcfg?list=PLGDwUiT1wr6-Fn3N2oqJpTdhGjFHnIIKY).
 
+#### upgrade-140
+
+The branch named `upgrade-140` contains the source code illustrated in the episode [Upgrading to Spring Boot 1.4](https://youtu.be/oxhhYZNKXAM?list=PLGDwUiT1wr6-Fn3N2oqJpTdhGjFHnIIKY).
+
 
 ## Languages
 

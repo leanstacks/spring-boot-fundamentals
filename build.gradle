@@ -4,7 +4,7 @@ buildscript {
   }
   
   dependencies {
-    classpath group: 'org.springframework.boot', name: 'spring-boot-gradle-plugin', version: '1.3.5.RELEASE'
+    classpath group: 'org.springframework.boot', name: 'spring-boot-gradle-plugin', version: '1.4.0.RELEASE'
   }
 }
 
@@ -17,6 +17,7 @@ apply plugin: 'jacoco'
 apply plugin: 'checkstyle'
 apply plugin: 'pmd'
 
+group = 'com.leanstacks'
 version = '1.0.0-SNAPSHOT'
 sourceCompatibility = 1.8
 
@@ -25,7 +26,7 @@ ext {
   checkstyleVersion = '6.16.1'
   pmdVersion = '5.4.1'
   guavaVersion = '19.0'
-  jadiraVersion = '4.0.0.GA'
+  jadiraVersion = '5.0.0.GA'
   swaggerVersion = '2.3.0'
 }
 
@@ -44,6 +45,7 @@ dependencies {
   compile group: 'joda-time', name: 'joda-time'
   compile group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-joda'
   compile group: 'com.google.guava', name: 'guava', version: guavaVersion
+  compile group: 'com.github.ben-manes.caffeine', name: 'caffeine'
   compile group: 'org.jadira.usertype', name: 'usertype.extended', version: jadiraVersion
   compile group: 'io.springfox', name: 'springfox-swagger2', version: swaggerVersion
   compile group: 'io.springfox', name: 'springfox-swagger-ui', version: swaggerVersion
@@ -55,6 +57,10 @@ dependencies {
 }
 
 defaultTasks 'clean', 'build'
+
+springBoot {
+  buildInfo()
+}
 
 jacoco {
   toolVersion = jacocoVersion
