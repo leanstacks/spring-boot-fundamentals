@@ -27,7 +27,6 @@ ext {
   pmdVersion = '5.4.1'
   guavaVersion = '19.0'
   jadiraVersion = '5.0.0.GA'
-  swaggerVersion = '2.3.0'
 }
 
 repositories {
@@ -47,8 +46,6 @@ dependencies {
   compile group: 'com.google.guava', name: 'guava', version: guavaVersion
   compile group: 'com.github.ben-manes.caffeine', name: 'caffeine'
   compile group: 'org.jadira.usertype', name: 'usertype.extended', version: jadiraVersion
-  compile group: 'io.springfox', name: 'springfox-swagger2', version: swaggerVersion
-  compile group: 'io.springfox', name: 'springfox-swagger-ui', version: swaggerVersion
   
   runtime group: 'org.hsqldb', name: 'hsqldb'
   runtime group: 'mysql', name: 'mysql-connector-java'
