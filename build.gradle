@@ -56,6 +56,7 @@ dependencies {
 defaultTasks 'clean', 'build'
 
 springBoot {
+  executable = true
   buildInfo()
 }
 

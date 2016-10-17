@@ -110,6 +110,10 @@ The branch named `gradle-defaulttasks` contains the source code illustrated in t
 
 The branch named `upgrade-140` contains the source code illustrated in the episode [Upgrading to Spring Boot 1.4](https://youtu.be/oxhhYZNKXAM?list=PLGDwUiT1wr6-Fn3N2oqJpTdhGjFHnIIKY).
 
+#### executable
+
+The branch named `executable` contains the source code illustrated in the episode [Installing a Spring Boot Application on a Server - Part One](https://youtu.be/eCalW4OBpV8?list=PLGDwUiT1wr6-Fn3N2oqJpTdhGjFHnIIKY).
+
 
 ## Languages
 
