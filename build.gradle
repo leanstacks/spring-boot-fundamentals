@@ -4,13 +4,13 @@ buildscript {
   }
   
   dependencies {
-    classpath group: 'org.springframework.boot', name: 'spring-boot-gradle-plugin', version: '1.4.1.RELEASE'
+    classpath group: 'org.springframework.boot', name: 'spring-boot-gradle-plugin', version: '1.4.2.RELEASE'
   }
 }
 
 apply plugin: 'java'
 apply plugin: 'eclipse'
-apply plugin: 'spring-boot'
+apply plugin: 'org.springframework.boot'
 apply plugin: 'project-report'
 apply plugin: 'build-dashboard'
 apply plugin: 'jacoco'
@@ -22,10 +22,10 @@ version = '1.0.0-SNAPSHOT'
 sourceCompatibility = 1.8
 
 ext {
-  jacocoVersion = '0.7.5.201505241946'
-  checkstyleVersion = '6.16.1'
-  pmdVersion = '5.4.1'
-  guavaVersion = '19.0'
+  jacocoVersion = '0.7.7.201606060606'
+  checkstyleVersion = '7.2'
+  pmdVersion = '5.5.2'
+  guavaVersion = '20.0'
   jadiraVersion = '5.0.0.GA'
 }
 
