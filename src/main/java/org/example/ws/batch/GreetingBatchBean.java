@@ -1,7 +1,5 @@
 package org.example.ws.batch;
 
-import java.util.Collection;
-
 import org.example.ws.model.Greeting;
 import org.example.ws.service.GreetingService;
 import org.slf4j.Logger;
@@ -10,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Profile;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
+
+import java.util.Collection;
 
 /**
  * The GreetingBatchBean contains <code>@Scheduled</code> methods operating on
@@ -37,7 +37,7 @@ public class GreetingBatchBean {
      * 
      * Expression: second minute hour day-of-month month weekday
      * 
-     * @see http ://docs.spring.io/spring/docs/current/javadoc-api/org/
+     * @see //http ://docs.spring.io/spring/docs/current/javadoc-api/org/
      *      springframework /scheduling/support/CronSequenceGenerator.html
      */
     @Scheduled(
