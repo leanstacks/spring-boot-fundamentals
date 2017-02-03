@@ -114,6 +114,10 @@ The branch named `upgrade-140` contains the source code illustrated in the episo
 
 The branch named `executable` contains the source code illustrated in the episode [Installing a Spring Boot Application on a Server - Part One](https://youtu.be/eCalW4OBpV8?list=PLGDwUiT1wr6-Fn3N2oqJpTdhGjFHnIIKY).
 
+#### resttemplate
+
+The branch named `resttemplate` contains the source code illustrated in the episode [Using RestTemplate and Spring Boot to Integrate with REST Services]().
+
 
 ## Languages
 
