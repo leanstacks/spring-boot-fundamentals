@@ -1,21 +1,13 @@
-buildscript {
-  repositories {
-    jcenter()
-  }
-  
-  dependencies {
-    classpath group: 'org.springframework.boot', name: 'spring-boot-gradle-plugin', version: '1.4.2.RELEASE'
-  }
+plugins {
+  id 'java'
+  id 'org.springframework.boot' version '1.5.1.RELEASE'
+  id 'eclipse'
+  id 'jacoco'
+  id 'checkstyle'
+  id 'pmd'
+  id 'project-report'
+  id 'build-dashboard'
 }
-
-apply plugin: 'java'
-apply plugin: 'eclipse'
-apply plugin: 'org.springframework.boot'
-apply plugin: 'project-report'
-apply plugin: 'build-dashboard'
-apply plugin: 'jacoco'
-apply plugin: 'checkstyle'
-apply plugin: 'pmd'
 
 group = 'com.leanstacks'
 version = '1.0.0-SNAPSHOT'
